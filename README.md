@@ -97,7 +97,7 @@ void loop() {
 
 ### Image
 
-![Code](Photos/Screenshot 2020-11-20 at 12.35.39 PM.png)
+![Code](Photos/Screenshot%202020-11-20%20at%2012.35.39%20PM.png)
 
 ### Reflection
 
