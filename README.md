@@ -1,7 +1,7 @@
 # Arduino
 This is a series of arduino assingments for school
 ## Table of Contents
-* [Blink and Fade](#Blink and Fade)
+* [Blink and Fade](#BlinkandFade)
 
 ## Blink and Fade 
 
