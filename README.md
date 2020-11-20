@@ -97,8 +97,12 @@ void loop() {
 
 ### Image
 
+![Code](Photos/Screenshot 2020-11-20 at 12.35.39 PM.png)
+
 ### Reflection
 
+This Assignment was fun and fairly easy. I'm not good at coding but it was still alright. In this Assignment I learned:
+* If and **Else** loop
 
 Arduino is awesome. I found it really helpful to rename all my Sketchs.  It is going to be a GREAT year in engineering.
 
