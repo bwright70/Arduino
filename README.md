@@ -41,7 +41,21 @@ void loop() {
 
 ### Image
 
+![Code](Photos/Screenshot%202020-11-20%20at%2011.52.18%20AM.png
+
 ### Reflection
 
+This Assignment was fun and fairly easy. I'm not good at coding but it was still alright. In this Assignment I learned:
+* How to wire things
+* Int (**Variable**)
+* pinmode
+* Serial.begin (**Connects to Serial Monitor**)
+* analogWrite
+* **For** Loop
+* Serial.print
+* **If** Loop
+* Delay
+
+Arduino is awesome. I found it really helpful to rename all my Sketchs.  It is going to be a GREAT year in engineering.
 
 ---
