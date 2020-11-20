@@ -14,42 +14,31 @@ The first assignment was make an Led blink and fade. The blink part of the assig
 #### Arduino Code
 
 int led = 9;
-
 int brightness = 0;
-
 int fade = 5;
 
 void setup() {
 
   pinMode(led, OUTPUT);
- 
- Serial.begin(9600);
+  Serial.begin(9600);
 
 }
 
 
 void loop() {
   analogWrite
-  
   (led, brightness);
-  
   brightness = brightness + fade;
- 
- for (int i = 0; i < (brightness / 20); i = i + 1) {
-    
-    Serial.print("-");
+  for (int i = 0; i < (brightness / 20); i = i + 1) {
+  Serial.print("-");
   }
  
  Serial.println("");
-  
-  if (brightness <= 0 || brightness >= 200) {
-   
-   fade = -fade;
- 
+ if (brightness <= 0 || brightness >= 200) {
+ fade = -fade;
  }
  
  delay(5);
-
 }
 
 ### Image
