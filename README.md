@@ -44,8 +44,6 @@ void loop() {
 
 ### Image
 
-![Code](Photos/Screenshot%202020-11-20%20at%2011.52.18%20AM.png)
-
 ### Reflection
 
 This Assignment was fun and fairly easy. I'm not good at coding but it was still alright. In this Assignment I learned:
@@ -73,6 +71,7 @@ This was the second assignment and was much easier than the first assignment. I 
 
 #### Arduino Code
 
+```C++
 int counter = 0;
 int led = 4;
 
@@ -96,10 +95,8 @@ void loop() {
     delay(1000);
   }
 }
-
+```
 ### Image
-
-![Code](Photos/Screenshot%202020-11-20%20at%2012.35.39%20PM.png)
 
 ### Reflection
 
