@@ -14,6 +14,7 @@ The first assignment was make an Led blink and fade. The blink part of the assig
 
 #### Arduino Code
 
+```C++
 int led = 9;
 int brightness = 0;
 int fade = 5;
@@ -39,6 +40,7 @@ void loop() {
  
  delay(5);
 }
+```
 
 ### Image
 
