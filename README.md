@@ -178,6 +178,8 @@ void turnRight() {
 ```
 ### Image
 
+[Wiring](Photos/IMG_0292.JPG)
+
 ### Reflection
 This assignment was difficult but rewarding once I manged to figure it out (with help). In this Assignment I learned:
 * HC-SR04 Distance Sensor
