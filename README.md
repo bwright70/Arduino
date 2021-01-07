@@ -111,14 +111,78 @@ Arduino is awesome. I found it really helpful to rename all my Sketchs.  It is g
 
 ### Description
 
+This was the third Assignment and the most difficult so far. It introduced HC-SR04 Sensor which senses objects placed in front of the sensor and the distance the object is from the sensor. Along with the HC-SR04 their was also a servo. The requirements of the assignment were to get the HC-SR04 to spin the servo all while using a function as a part of your code. 
+
 ### Evidence
 
 #### Arduino Code
 
+```C++
+#include <Servo.h>
+#define echoPin 2
+#define trigPin 3
+
+Servo myServo;
+
+int servoPin = 12;
+int loopDistance = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  Serial.println("Ultrasonic Sensor HC-SR04 Test");
+  myServo.attach(servoPin);
+}
+
+void loop() {
+  loopDistance = getdis();
+  Serial.print("Distance: ");
+  Serial.print(loopDistance);
+  Serial.println(" cm");
+  
+  if ((loopDistance < 5)) {
+    turnRight();
+  }
+  else if ((loopDistance > 5) && (loopDistance < 50)) {
+    turnLeft();
+  }
+  else {
+    stopServo();
+  }
+}
+int getdis() {
+  long duration;
+  int distance;
+
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  duration = pulseIn(echoPin, HIGH);
+
+  distance = duration * 0.034 / 2; // Speed of sound wave divided by 2 (go and back)
+  return distance;
+}
+void stopServo() {
+   myServo.write(89);
+}
+void turnLeft() {
+  myServo.write(40);
+}
+void turnRight() {
+  myServo.write(140);
+}
+```
 ### Image
 
 ### Reflection
-
+This assignment was difficult but rewarding once I manged to figure it out (with help). In this Assignment I learned:
+* HC-SR04 Distance Sensor
+* Functions
+* Servo Stuff
 
 Arduino is awesome. I found it really helpful to rename all my Sketchs.  It is going to be a GREAT year in engineering.
 
